@@ -125,8 +125,9 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                  asChild
               >
-                Accéder à l'administration
+                <Link href="/admin/dashboard-selector">Accéder à l'administration</Link>
               </Button>
             </div>
           </div>
@@ -301,7 +302,7 @@ export default function HomePage() {
             </div>
 
             <div className="border-t border-blue-800 mt-8 pt-8 text-center text-blue-200 transition-colors duration-300 hover:text-white">
-              <p>&copy; 2024 SecTools. Tous droits réservés.</p>
+              <p>&copy; 2025 SecTools. Tous droits réservés.</p>
             </div>
           </div>
         </footer>
