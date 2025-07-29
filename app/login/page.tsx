@@ -187,55 +187,6 @@ export default function LoginPage() {
                                     </div>
                                 )}
                             </Button>
-
-                            {/* Divider */}
-                            <div className="relative my-6">
-                                <div className="absolute inset-0 flex items-center">
-                                    <div className="w-full border-t border-gray-300"></div>
-                                </div>
-                                <div className="relative flex justify-center text-sm">
-                                    <span className="px-2 bg-white text-gray-500">ou</span>
-                                </div>
-                            </div>
-
-                            {/* Demo Accounts */}
-                            <div className="space-y-2">
-                                <p className="text-xs text-gray-500 text-center">Comptes de démonstration :</p>
-                                <div className="grid grid-cols-2 gap-2">
-                                    <Button
-                                        type="button"
-                                        variant="outline"
-                                        size="sm"
-                                        className="text-xs border-blue-200 text-blue-600 hover:bg-blue-50 bg-transparent"
-                                        onClick={() =>
-                                            setFormData({
-                                                email: "client@demo.com",
-                                                password: "demo123",
-                                                rememberMe: false,
-                                            })
-                                        }
-                                        disabled={isLoading}
-                                    >
-                                        Client Demo
-                                    </Button>
-                                    <Button
-                                        type="button"
-                                        variant="outline"
-                                        size="sm"
-                                        className="text-xs border-red-200 text-red-600 hover:bg-red-50 bg-transparent"
-                                        onClick={() =>
-                                            setFormData({
-                                                email: "admin@demo.com",
-                                                password: "admin123",
-                                                rememberMe: false,
-                                            })
-                                        }
-                                        disabled={isLoading}
-                                    >
-                                        Admin Demo
-                                    </Button>
-                                </div>
-                            </div>
                         </form>
                     </CardContent>
                 </Card>
